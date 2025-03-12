@@ -1,129 +1,110 @@
-
 body {
     font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('fondo.jpg');
-    background-size: cover;
-    background-position: center;
+    background: url('fondo.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
-
-.login-container {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+.formulario {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
     text-align: center;
-    width: 300px;
+    width: 320px;
 }
 
-
-.user-icon {
-    width: 80px;
-    margin-bottom: 10px;
-}
-
-
-.usuario {
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    padding: 10px;
-    border-radius: 15px;
+.img-container img {
+    width: 75px;
     margin: 10px 0;
 }
 
-.usuario i {
-    margin-right: 10px;
-    color: #555;
+.campo {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
 }
 
-.usuario input {
+.campo i {
+    margin-right: 10px;
+    color: #666;
+}
+
+.campo input {
     border: none;
     outline: none;
-    background: none;
+    background: transparent;
     width: 100%;
-    font-size: 16px;
+    font-size: 15px;
 }
 
-.login-btn {
-    background: red;
+.boton-login {
+    background: #e63946;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 12px;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 18px;
-    margin-top: 10px;
-    transition: opacity 0.3s;
+    font-size: 17px;
+    margin-top: 12px;
+    transition: background 0.3s;
 }
 
-.login-btn:hover {
-    opacity: 0.5;
+.boton-login:hover {
+    background: #d62839;
 }
 
-
-.social-icons {
-    margin-top: 15px;
+.redes {
+    margin-top: 12px;
     display: flex;
-    justify-content: center;
-    gap: 15px; 
+    justify-content: space-between;
+    padding: 0 15px;
 }
-.social-icons a {
+
+.redes a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
-    width: 45px;   
-    height: 45px;  
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;  
-    transition: opacity 0.3s;
+    border-radius: 50%;
+    transition: transform 0.3s;
 }
 
-
-.social-icons a i {
-    margin: 0;
-    padding: 0; 
+.redes a:hover {
+    transform: scale(1.1);
 }
 
-.social-icons .fa-facebook {
+.facebook {
     background: #3b5998;
-    padding: 12px;
-    border-radius: 50%;
-    
 }
 
-.social-icons .fa-twitter {
+.twitter {
     background: #1da1f2;
-    padding: 12px;
-    border-radius: 50%;
 }
 
-.social-icons .fa-google {
+.google {
     background: #db4437;
-    padding: 12px;
-    border-radius: 50%;
 }
-.social-icons a:hover {
-    opacity: 0.5;
-}
-
 
 p {
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 14px;
 }
 
 p a {
-    color: red;
+    color: #e63946;
     text-decoration: none;
 }
 
